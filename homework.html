@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework - AI CodEx Learn</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <h1>AI CodEx Learn</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="#" onclick="logoutUser()">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Submit Homework</h2>
+        <p>Complete the challenge for the selected language and submit your solution.</p>
+        <form id="homeworkForm" class="homework-form" onsubmit="submitHomework(event)">
+            <h3>Challenge</h3>
+            <p>Write a program or describe a solution based on your lessons (e.g., create a webpage, write a function, etc.).</p>
+            <textarea name="solution" placeholder="Enter your solution here..." required></textarea>
+            <input type="submit" value="Submit Homework">
+        </form>
+    </main>
+    <footer>
+        <p>© 2025 AI CodEx Learn. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
