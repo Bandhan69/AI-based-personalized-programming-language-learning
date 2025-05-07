@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - AI CodEx Learn</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <h1>Welcome!</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="#" onclick="logoutUser()">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Your Learning Dashboard</h2>
+        <p>Choose a segment to continue your learning journey:</p>
+        <ul>
+            <li><a href="lessons.html?segment=text">Text Lessons</a></li>
+            <li><a href="lessons.html?segment=video">Video Lessons</a></li>
+            <li><a href="lessons.html?segment=quizzes">Quizzes</a></li>
+            <li><a href="lessons.html?segment=homework">Homework</a></li>
+            <li><a href="ai-lesson.html">AI-Built Lessons</a></li>
+        </ul>
+        <div class="ranking-table" id="homeworkProgress"></div>
+        <div class="ranking-table" id="worldRanking"></div>
+    </main>
+    <footer>
+        <p>© 2025 AI CodEx Learn. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', loadDashboard);
+    </script>
+</body>
+</html>
