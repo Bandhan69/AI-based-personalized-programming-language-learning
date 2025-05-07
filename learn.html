@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn - AI CodEx Learn</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <h1>AI CodEx Learn</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="#" onclick="logoutUser()">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Learn a Programming Language</h2>
+        <div class="lesson-content" id="lessonContent">
+            <p>Loading lesson...</p>
+        </div>
+    </main>
+    <footer>
+        <p>© 2025 AI CodEx Learn. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', loadLesson);
+    </script>
+</body>
+</html>
