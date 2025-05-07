@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Built Lessons - AI CodEx Learn</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <h1>AI CodEx Learn</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="#" onclick="logoutUser()">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Create an AI-Built Lesson</h2>
+        <p>Ask a question about a programming language or framework, and our AI will generate a detailed lesson for you.</p>
+        <form id="aiLessonForm" class="ai-lesson-form" onsubmit="submitAILesson(event)">
+            <input type="text" name="question" placeholder="Enter your question (e.g., How do I create a function in Python?)" required>
+            <select name="language" required>
+                <option value="" disabled selected>Choose a Topic</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="SQL">SQL</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="PHP">PHP</option>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="Bootstrap">Bootstrap</option>
+                <option value="React">React</option>
+                <option value="Django">Django</option>
+            </select>
+            <input type="submit" value="Generate Lesson">
+        </form>
+        <div class="loader" id="loader"></div>
+        <div class="ai-response" id="aiResponse"></div>
+    </main>
+    <footer>
+        <p>© 2025 AI CodEx Learn. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked@4.0.12/lib/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
